@@ -24,7 +24,6 @@ stages:
               repository: leriksen/docker-as-command
               dockerfile: $(Build.SourcesDirectory)/docker/Dockerfile
               containerRegistry: docker.io
-              arguments: --platform linux/amd64
               tags: |
                 0.0.1-$(Build.BuildId)
                 latest
