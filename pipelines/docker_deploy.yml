@@ -21,7 +21,7 @@ stages:
             inputs:
               buildContext: $(Build.SourcesDirectory)
               command: buildAndPush
-              repository: docker-as-command
+              repository: leriksen/docker-as-command
               dockerfile: $(Build.SourcesDirectory)/docker/Dockerfile
               containerRegistry: docker.io
               tags: |
